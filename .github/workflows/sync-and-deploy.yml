@@ -1,0 +1,101 @@
+name: Sync Knowledge and Deploy
+
+on:
+  # 每小时检查一次更新
+  schedule:
+    - cron: '0 * * * *'  # 每小时的第0分钟
+  # 也可以手动触发
+  workflow_dispatch:
+  # 首次推送时也触发
+  push:
+    branches:
+      - v4
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  sync-and-build:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout my-notes repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Checkout Knowledge repo
+        uses: actions/checkout@v4
+        with:
+          repository: summerKK/Knowledge
+          path: knowledge-temp
+
+      - name: Sync content from Knowledge repo
+        run: |
+          # 删除旧的 content 文件夹
+          rm -rf content
+          # 复制 Knowledge 仓库的内容
+          cp -r knowledge-temp content
+          # 删除 .git 和 .obsidian 文件夹
+          rm -rf content/.git content/.obsidian
+          # 清理临时文件夹
+          rm -rf knowledge-temp
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add content
+          if git diff --staged --quiet; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No changes detected"
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "Changes detected"
+          fi
+
+      - name: Commit changes
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git commit -m "Sync content from Knowledge repo: $(date '+%Y-%m-%d %H:%M:%S')"
+          git push
+
+      - uses: actions/setup-node@v4
+        if: steps.check_changes.outputs.has_changes == 'true'
+        with:
+          node-version: 22
+
+      - name: Install Dependencies
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: npm ci
+
+      - name: Build Quartz
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: npx quartz build
+
+      - name: Upload artifact
+        if: steps.check_changes.outputs.has_changes == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: sync-and-build
+    if: needs.sync-and-build.outputs.has_changes == 'true'
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
