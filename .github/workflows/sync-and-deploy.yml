@@ -29,10 +29,11 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Checkout Knowledge repo
+      - name: Checkout Knowledge repo (private)
         uses: actions/checkout@v4
         with:
           repository: summerKK/Knowledge
+          token: ${{ secrets.KNOWLEDGE_TOKEN }}
           path: knowledge-temp
 
       - name: Sync content from Knowledge repo
