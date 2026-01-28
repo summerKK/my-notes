@@ -27,12 +27,12 @@ jobs:
       should_build: ${{ steps.should_build.outputs.should_build }}
     steps:
       - name: Checkout my-notes repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
       - name: Checkout Knowledge repo (private)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: summerKK/Knowledge
           token: ${{ secrets.KNOWLEDGE_TOKEN }}
@@ -79,7 +79,7 @@ jobs:
             echo "should_build=false" >> $GITHUB_OUTPUT
           fi
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         if: steps.should_build.outputs.should_build == 'true'
         with:
           node-version: 22
@@ -94,7 +94,7 @@ jobs:
 
       - name: Upload artifact
         if: steps.should_build.outputs.should_build == 'true'
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: public
 
