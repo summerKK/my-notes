@@ -23,6 +23,8 @@ concurrency:
 jobs:
   sync-and-build:
     runs-on: ubuntu-22.04
+    outputs:
+      should_build: ${{ steps.should_build.outputs.should_build }}
     steps:
       - name: Checkout my-notes repo
         uses: actions/checkout@v4
@@ -67,28 +69,38 @@ jobs:
           git commit -m "Sync content from Knowledge repo: $(date '+%Y-%m-%d %H:%M:%S')"
           git push
 
+      # Always build if triggered by push to v4 branch
+      - name: Set build flag
+        id: should_build
+        run: |
+          if [ "${{ github.event_name }}" == "push" ] || [ "${{ steps.check_changes.outputs.has_changes }}" == "true" ]; then
+            echo "should_build=true" >> $GITHUB_OUTPUT
+          else
+            echo "should_build=false" >> $GITHUB_OUTPUT
+          fi
+
       - uses: actions/setup-node@v4
-        if: steps.check_changes.outputs.has_changes == 'true'
+        if: steps.should_build.outputs.should_build == 'true'
         with:
           node-version: 22
 
       - name: Install Dependencies
-        if: steps.check_changes.outputs.has_changes == 'true'
+        if: steps.should_build.outputs.should_build == 'true'
         run: npm ci
 
       - name: Build Quartz
-        if: steps.check_changes.outputs.has_changes == 'true'
+        if: steps.should_build.outputs.should_build == 'true'
         run: npx quartz build
 
       - name: Upload artifact
-        if: steps.check_changes.outputs.has_changes == 'true'
+        if: steps.should_build.outputs.should_build == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: public
 
   deploy:
     needs: sync-and-build
-    if: needs.sync-and-build.outputs.has_changes == 'true'
+    if: needs.sync-and-build.outputs.should_build == 'true'
     permissions:
       pages: write
       id-token: write
