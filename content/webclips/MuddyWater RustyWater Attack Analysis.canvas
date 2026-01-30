@@ -1,0 +1,22 @@
+{
+	"nodes":[
+		{"id":"a7b8c9d0e1f2a3b4","type":"group","x":440,"y":-440,"width":1440,"height":540,"color":"3","label":"攻击链 (Kill Chain)"},
+		{"id":"b2c3d4e5f6a7b8c9","type":"text","text":"## 📧 初始访问\n\n**鱼叉式钓鱼邮件**\n- 伪装: 网络安全指南\n- 附件: 恶意 Word 文档\n- 诱导: \"启用内容\"","x":475,"y":-315,"width":300,"height":150,"color":"2"},
+		{"id":"f6a7b8c9d0e1f2a3","type":"text","text":"## 🔧 工具演进\n\n**历史工具**:\n- PowerShell/VBS 加载器\n- 合法远程访问软件\n\n**当前工具链**:\n- 🦀 RustyWater (Rust)\n- 🔥 Phoenix\n- 📡 UDPGangster\n- 😴 BugSleep (MuddyRot)\n- 🐍 MuddyViper\n\n**趋势**: 更结构化、模块化、低噪音","x":0,"y":720,"width":350,"height":220,"color":"5"},
+		{"id":"a1b2c3d4e5f6a7b8","type":"text","text":"# 🎯 威胁行为者\n\n**MuddyWater**\n- 别名: Mango Sandstorm, Static Kitten, TA450\n- 隶属: 伊朗情报与安全部 (MOIS)\n- 活跃时间: 2017年至今\n- 特点: 持续演进工具链","x":0,"y":260,"width":350,"height":200,"color":"1"},
+		{"id":"e5f6a7b8c9d0e1f2","type":"text","text":"## 🎯 攻击目标\n\n**中东地区**:\n- 🏛️ 外交实体\n- ⚓ 海事组织\n- 💰 金融机构\n- 📡 电信公司\n\n**以色列** (Operation IconCat):\n- IT/MSP 公司\n- 人力资源部门\n- 软件开发公司","x":450,"y":520,"width":350,"height":200,"color":"4"},
+		{"id":"b8c9d0e1f2a3b4c5","type":"text","text":"## 📊 技术特征\n\n**编程语言**: Rust\n- 跨平台兼容\n- 内存安全\n- 难以逆向\n\n**通信**: 异步 C2\n**反分析**: 检测虚拟环境\n**持久化**: Windows 注册表","x":880,"y":760,"width":300,"height":180,"color":"5"},
+		{"id":"d4e5f6a7b8c9d0e1","type":"text","text":"## 🦠 RustyWater RAT\n\n**别名**: Archer RAT, RUSTRIC\n\n**核心功能**:\n- 🔍 收集机器信息\n- 🛡️ 检测安全软件\n- 📌 注册表持久化\n- 🌐 C2 通信\n- 📁 文件操作\n- 💻 命令执行\n\n**C2**: nomercys.it[.]com","x":1490,"y":-315,"width":350,"height":280,"color":"6"},
+		{"id":"c3d4e5f6a7b8c9d0","type":"text","text":"## ⚙️ 执行\n\n**VBA 宏激活**\n- 触发条件: 用户启用内容\n- 功能: 部署 Rust 二进制文件\n- 载荷: RustyWater RAT","x":1030,"y":-250,"width":300,"height":150,"color":"3"},
+		{"id":"c9d0e1f2a3b4c5d6","type":"file","file":"webclips/2026-01-10 WEB MuddyWater Launches RustyWater RAT via Spear-Phishing Across Middle East Sectors.md","x":1395,"y":650,"width":540,"height":220}
+	],
+	"edges":[
+		{"id":"d0e1f2a3b4c5d6e7","fromNode":"a1b2c3d4e5f6a7b8","fromSide":"right","toNode":"b2c3d4e5f6a7b8c9","toSide":"left","color":"1","label":"发起攻击"},
+		{"id":"e1f2a3b4c5d6e7f8","fromNode":"b2c3d4e5f6a7b8c9","fromSide":"right","toNode":"c3d4e5f6a7b8c9d0","toSide":"left","color":"2","label":"用户交互"},
+		{"id":"f2a3b4c5d6e7f8a9","fromNode":"c3d4e5f6a7b8c9d0","fromSide":"right","toNode":"d4e5f6a7b8c9d0e1","toSide":"left","color":"3","label":"部署"},
+		{"id":"a3b4c5d6e7f8a9b0","fromNode":"d4e5f6a7b8c9d0e1","fromSide":"bottom","toNode":"e5f6a7b8c9d0e1f2","toSide":"top","color":"6","label":"攻击目标"},
+		{"id":"b4c5d6e7f8a9b0c1","fromNode":"a1b2c3d4e5f6a7b8","fromSide":"bottom","toNode":"f6a7b8c9d0e1f2a3","toSide":"top","color":"5","label":"工具演进"},
+		{"id":"c5d6e7f8a9b0c1d2","fromNode":"d4e5f6a7b8c9d0e1","fromSide":"bottom","toNode":"b8c9d0e1f2a3b4c5","toSide":"top","label":"技术实现"},
+		{"id":"d6e7f8a9b0c1d2e3","fromNode":"b8c9d0e1f2a3b4c5","fromSide":"right","toNode":"c9d0e1f2a3b4c5d6","toSide":"left","color":"5","label":"详细报告"}
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"d4e5f6g7","type":"text","text":"## 📈 主要山寨币表现\n\n| 币种 | 表现 | 备注 |\n|------|------|------|\n| 🚀 XRP | +9% | 领涨山寨币 |\n| ⚡ Solana | 活跃 | 生态活跃 |\n| 💰 BNB | 稳定 | 市值前5 |\n| 🐕 Dogecoin | 上涨 | 跟随大盘 |\n| 📊 Cardano | 上涨 | 跟随大盘 |\n\n---\n\n### 🏗️ 市值排名 Top 7\n1. **BTC** - 比特币 (主导地位)\n2. **ETH** - 以太坊\n3. **USDT** - Tether (稳定币)\n4. **XRP** - Ripple\n5. **BNB** - Binance Coin\n6. **SOL** - Solana\n7. **USDC** - 稳定币","x":-140,"y":300,"width":400,"height":320,"color":"4"},
+		{"id":"g7h8i9j0","type":"text","text":"## 💡 投资建议\n\n### 短期策略 (1-3个月)\n🎯 关注BTC能否突破$100,000\n📊 仓位控制，避免追高\n🔄 分散投资\n\n### 中期策略 (3-12个月)\n🏦 机构采用趋势\n💎 DeFi和RWA机会\n⚡ 技术创新项目\n\n---\n\n### 投资者建议\n\n> [!tip] **四大原则**\n> 1. **长期视角** - 关注技术发展\n> 2. **风险意识** - 做好风险管理\n> 3. **持续学习** - 保持学习态度\n> 4. **合规优先** - 遵守当地法规","x":-200,"y":860,"width":400,"height":280,"color":"1"},
+		{"id":"a1b2c3d4","type":"text","text":"## 🪙 加密货币市场分析报告\n\n**2026年1月**\n\n---\n\n### 📊 核心数据\n\n| 指标 | 数值 |\n|------|------|\n| 比特币价格 | $93,155 - $95,000 |\n| 市场总市值 | $3.24万亿 |\n| BTC年初涨幅 | ~6% |\n| 24H交易量 | $377亿 |\n\n---\n\n**市场情绪**: 从\"极度恐慌\"转向谨慎乐观 😊","x":-200,"y":-155,"width":400,"height":250,"color":"1"},
+		{"id":"i9j0k1l2","type":"text","text":"## 📚 数据来源\n\n- [[CoinDesk]]\n- [[Binance Research]]\n- [[Bitwise Investments]]\n- [[Grayscale Research]]\n- [[Galaxy Digital]]\n- [[The Block Research]]\n- [[Finance Magnates]]\n- [[CoinDCX]]\n\n---\n\n## 🔗 相关链接\n\n- [[2025年12月报告]]\n- [[长期持有策略]]\n- [[比特币技术分析]]\n- [[RWA代币化机会]]","x":1075,"y":620,"width":350,"height":200,"color":"3"},
+		{"id":"j0k1l2m3","type":"file","file":"加密货币/加密货币市场分析报告 - 2026年1月.md","subpath":"#执行摘要","x":1075,"y":990,"width":350,"height":150,"color":"4"},
+		{"id":"f6g7h8i9","type":"text","text":"## ⚠️ 风险提示 #risk-management\n\n### 🔴 短期风险\n- 技术阻力: $100,000整数关口\n- 获利回吐压力\n- 美联储货币政策影响\n\n### 🟡 中期风险\n- 监管不确定性\n- CBDC竞争加剧\n- 网络安全风险\n\n### 🟢 长期风险\n- 市场周期性波动\n- 技术迭代颠覆\n- 社会接受度时间\n\n---\n\n> [!warning] **核心原则**\n> ✅ 只投资能承受损失的资金\n> 🔄 分散投资，避免单一风险\n> ⏰ 长期持有，短期波动是常态","x":1075,"y":300,"width":350,"height":280,"color":"6"},
+		{"id":"c3d4e5f6","type":"text","text":"## 🌐 以太坊 (ETH) #ethereum\n\n### 当前状态\n- **目标区间**: $2,900 - $3,150\n- **趋势**: 等待确认趋势反转\n\n### 关键因素\n🔗 网络升级进展\n💎 DeFi生态发展\n🏦 机构采用程度\n\n### 特别关注\n[[Neo银行]]（数字银行）预计将成为推动以太坊2026年增长的重要力量\n\n---\n\n**传统银行 + DeFi** = 🚀","x":960,"y":-30,"width":350,"height":250,"color":"3"},
+		{"id":"h8i9j0k1","type":"text","text":"## ✅ 结论\n\n2026年加密货币市场呈现**积极发展态势**：\n\n- 🔹 比特币强劲表现\n- 🔹 机构资金持续流入\n- 🔹 技术基本面改善\n\n---\n\n> [!disclaimer] **免责声明**\n> 本报告仅供参考，不构成投资建议。加密货币投资风险较高，请充分研究并咨询专业顾问。\n\n---\n\n**报告日期**: 2026-01-06  \n**下次更新**: 2026-02-01  \n**版本**: v1.0","x":480,"y":1040,"width":380,"height":200,"color":"2"},
+		{"id":"e5f6g7h8","type":"text","text":"## 🔮 2026年市场预测\n\n### 机构观点\n\n> [!quote] **Bitwise**\n> - 比特币将打破4年周期规律\n> - 波动率将低于英伟达\n> - 机构采用持续加速\n\n> [!quote] **Galaxy Digital**\n> - 2027年底目标: **$250,000**\n> - 2026年可能创历史新高\n\n> [!quote] **Grayscale**\n> - \"**机构化时代**\"已到来\n> - 透明、可编程、供应稀缺资产需求上升\n\n---\n\n### 四大关键主题\n\n1️⃣ **机构化加速** - ETF扩展、托管合规\n2️⃣ **DeFi成熟化** - RWA代币化、稳定币基础设施\n3️⃣ **技术创新** - Layer 2优化、互操作性\n4️⃣ **监管明确化** - 框架清晰、合规主流","x":440,"y":300,"width":380,"height":400,"color":"5"},
+		{"id":"b2c3d4e5","type":"text","text":"## 💎 比特币 (BTC) #bitcoin\n\n### 当前状态\n- **价格**: $93,155 - $95,000\n- **年初至今**: +6% 🚀\n- **连续上涨**: 5个交易日\n\n### 技术分析\n✅ 突破4周高点\n🎯 接近$95,000关键阻力\n📈 下一目标: $100,000 - $110,000\n\n### 预测\n多数分析师认为2026年有望测试**$100,000-$110,000**区间","x":440,"y":-360,"width":380,"height":280,"color":"2"}
+	],
+	"edges":[
+		{"id":"edge-1","fromNode":"a1b2c3d4","fromSide":"right","toNode":"b2c3d4e5","toSide":"left","color":"1","label":"核心资产"},
+		{"id":"edge-2","fromNode":"a1b2c3d4","fromSide":"right","toNode":"c3d4e5f6","toSide":"left","color":"2","label":"智能合约"},
+		{"id":"edge-3","fromNode":"a1b2c3d4","fromSide":"bottom","toNode":"d4e5f6g7","toSide":"top","color":"3","label":"市场结构"},
+		{"id":"edge-4","fromNode":"b2c3d4e5","fromSide":"bottom","toNode":"e5f6g7h8","toSide":"top","color":"4","label":"价格预测"},
+		{"id":"edge-5","fromNode":"e5f6g7h8","fromSide":"right","toNode":"f6g7h8i9","toSide":"left","color":"5","label":"风险提示"},
+		{"id":"edge-6","fromNode":"g7h8i9j0","fromSide":"right","toNode":"h8i9j0k1","toSide":"left","color":"6","label":"投资策略"},
+		{"id":"edge-7","fromNode":"f6g7h8i9","fromSide":"bottom","toNode":"g7h8i9j0","toSide":"top","color":"1","label":"风险管理"},
+		{"id":"edge-8","fromNode":"d4e5f6g7","fromSide":"bottom","toNode":"g7h8i9j0","toSide":"top","color":"2","label":"投资机会"}
+	]
+}

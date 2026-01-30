@@ -1,0 +1,42 @@
+name: Trigger Quartz Build
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  trigger-build:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Trigger my-notes workflow
+        run: |
+          echo "📢 Triggering Quartz build in my-notes repository..."
+
+          response=$(curl -s -w "\n%{http_code}" -X POST \
+            -H "Accept: application/vnd.github.v3+json" \
+            -H "Authorization: token ${{ secrets.TRIGGER_TOKEN }}" \
+            https://api.github.com/repos/summerKK/my-notes/actions/workflows/sync-and-deploy.yml/dispatches \
+            -d '{"ref":"v4"}')
+
+          http_code=$(echo "$response" | tail -n1)
+
+          if [ "$http_code" = "204" ]; then
+            echo "✅ Successfully triggered workflow"
+          else
+            echo "❌ Failed to trigger workflow. HTTP code: $http_code"
+            echo "Response: $(echo "$response" | head -n-1)"
+            exit 1
+          fi
+
+      - name: Wait and check workflow status
+        run: |
+          echo "⏳ Waiting 10 seconds for workflow to start..."
+          sleep 10
+
+          echo "📊 Recent workflow runs:"
+          curl -s -H "Accept: application/vnd.github.v3+json" \
+            -H "Authorization: token ${{ secrets.TRIGGER_TOKEN }}" \
+            https://api.github.com/repos/summerKK/my-notes/actions/runs?per_page=1 \
+            | jq -r '.workflow_runs[0] | "Status: \(.status) | Conclusion: \(.conclusion // "in_progress") | URL: \(.html_url)"'

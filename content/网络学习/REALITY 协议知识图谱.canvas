@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"b2c3d4e5f6a7b8c9","type":"text","text":"## 一、协议原理\n\n### 核心概念：完美伪装\n\n**普通代理** = 锁着的防盗门\n\n**REALITY** = 聪明的接线员\n\n- ✅ **合法用户** → 验证私钥 → 代理通道\n- 🎭 **陌生人** → 伪装成普通网站 → 透传请求\n\n**结果**：IP 看起来像 PayPal 等大厂服务器","x":-400,"y":230,"width":320,"height":220,"color":"5"},
+		{"id":"e5f6a7b8c9d0e1f2","type":"text","text":"## 四、避坑策略 A\n### 换掉\"招贼\"域名\n\n**❌ 不要使用**：\n- `www.paypal.com`\n- `www.microsoft.com`\n- `www.apple.com`\n- `www.cloudflare.com`\n\n**✅ 建议使用**：\n- 冷门的个人博客\n- 地方性小众网站\n- 支持 TLS 1.3 的国外站点\n\n**难度**：⭐ | **安全性**：⭐⭐","x":-400,"y":580,"width":340,"height":200,"color":"4"},
+		{"id":"a1b2c3d4e5f6a7b8","type":"text","text":"# REALITY 协议\n## 核心问题\n\n**流量异常飙升**：一小时跑掉 1TB\n\n> \"被当成了别人的免费 CDN\"\n\n来源：[NodeSeek 论坛](https://www.nodeseek.com/post-508509-1)","x":60,"y":-150,"width":350,"height":180,"color":"1"},
+		{"id":"d4e5f6a7b8c9d0e1","type":"text","text":"## 三、三大动机\n\n### 🎯 为什么非用你的 IP？\n\n| 动机 | 说明 |\n|------|------|\n| **躲避风控** | 黑产 IP 被封，你的 VPS IP 信用高 |\n| **突破限制** | 1 人查 10 次 → 1000 节点查 10000 次 |\n| **物理加速** | 东南亚用户 → 美国服务器 = 加速器 |\n\n### 💰 双倍计费陷阱\n\n进 + 出 + 回 = 3 倍流量消耗 💸","x":660,"y":240,"width":320,"height":260,"color":"3"},
+		{"id":"a7b8c9d0e1f2a3b4","type":"text","text":"## 六、避坑策略 C\n### 配置阻断逻辑\n\n### 两种方案\n\n**方案 1**：重定向到小页面\n```javascript\nif (!hasValidClientHello()) {\n  return staticPage(\"404\");\n}\n```\n\n**方案 2**：检测 IP 访问\n- 直接通过 IP 访问 → 断开连接\n- 使用域名访问 → 正常处理\n\n**难度**：⭐⭐⭐ | **安全性**：很高","x":640,"y":620,"width":340,"height":200,"color":"4"},
+		{"id":"c3d4e5f6a7b8c9d0","type":"text","text":"## 二、流量被盗机制\n\n### 🔄 完整流程\n\n1. **扫描器发现**：你的 IP 能流畅访问 PayPal\n\n2. **标记节点**：灰产记录为\"PayPal 优选 IP\"\n\n3. **流量涌入**：\n   - 黑产通过你访问 PayPal\n   - **进**：请求给你（消耗流量）\n   - **出**：转发给 PayPal（再消耗）\n   - **回**：PayPal → 你 → 黑产（继续消耗）\n\n4. **结果**：你的服务器 = 免费 CDN 加速节点","x":75,"y":220,"width":320,"height":280,"color":"2"},
+		{"id":"f6a7b8c9d0e1f2a3","type":"text","text":"## 五、避坑策略 B ⭐⭐⭐\n### 本地闭环（推荐）\n\n### 实现步骤\n\n1. **安装 Nginx**\n   ```bash\n   apt install nginx -y\n   # 默认监听 127.0.0.1:80\n   ```\n\n2. **设置 dest**\n   ```json\n   {\n     \"dest\": \"127.0.0.1:80\"\n   }\n   ```\n\n3. **效果**\n   - 流量只在服务器内部打转\n   - 无外部流量消耗 ✅\n\n**难度**：⭐⭐ | **安全性**：高","x":75,"y":580,"width":340,"height":280,"color":"4"},
+		{"id":"b8c9d0e1f2a3b4c5","type":"text","text":"## 七、策略对比与总结\n\n### 三种策略对比表\n\n| 策略 | 难度 | 成本 | 安全性 | 推荐指数 |\n|------|------|------|--------|----------|\n| **A. 换冷门域名** | ⭐ | 免费 | 中等 | ⭐⭐ |\n| **B. 本地闭环** | ⭐⭐ | 免费 | 高 | ⭐⭐⭐ |\n| **C. 阻断逻辑** | ⭐⭐⭐ | 需开发 | 很高 | ⭐⭐ |\n\n### 💡 核心要点\n\n> **\"能力越大，责任越大\"**\n\n- ✅ 协议本身优秀（通过透传解决被探测）\n- ⚠️ 配置不当 = 公告天下（大厂域名 = 免费转发站）\n- 🎯 最优解：本地闭环 + 冷门域名","x":-225,"y":1040,"width":940,"height":180,"color":"6"},
+		{"id":"c9d0e1f2a3b4c5d6","type":"text","text":"## 八、快速自检清单\n\n### ⚠️ 被\"当CDN\"的症状\n\n- [ ] 流量异常飙升，自己却没怎么用\n- [ ] `dest` 设置为大厂域名\n- [ ] 日志中有大量未知 IP 访问\n- [ ] 一小时跑掉数百 MB/数 GB\n\n### 🚀 立即行动\n\n1. 修改 `dest` 为冷门域名或 `127.0.0.1:80`\n2. 检查流量使用情况\n3. 配置访问监控和限流\n\n---\n\n*学习时间：2025-01-07* | *关键领悟：协议没漏洞，配置不当才是坑* ⚠️","x":-225,"y":1360,"width":940,"height":160,"color":"5"}
+	],
+	"edges":[
+		{"id":"e1f2a3b4c5d6e7f8","fromNode":"a1b2c3d4e5f6a7b8","fromSide":"bottom","toNode":"b2c3d4e5f6a7b8c9","toSide":"top","color":"5","label":"是什么？"},
+		{"id":"f2a3b4c5d6e7f8a9","fromNode":"a1b2c3d4e5f6a7b8","fromSide":"bottom","toNode":"c3d4e5f6a7b8c9d0","toSide":"top","color":"2","label":"为什么？"},
+		{"id":"a3b4c5d6e7f8a9b0","fromNode":"a1b2c3d4e5f6a7b8","fromSide":"bottom","toNode":"d4e5f6a7b8c9d0e1","toSide":"top","color":"3","label":"谁干的？"},
+		{"id":"b4c5d6e7f8a9b0c1","fromNode":"b2c3d4e5f6a7b8c9","fromSide":"bottom","toNode":"e5f6a7b8c9d0e1f2","toSide":"top","color":"4","label":"怎么办？"},
+		{"id":"c5d6e7f8a9b0c1d2","fromNode":"c3d4e5f6a7b8c9d0","fromSide":"bottom","toNode":"f6a7b8c9d0e1f2a3","toSide":"top","color":"4","label":"最佳方案"},
+		{"id":"d6e7f8a9b0c1d2e3","fromNode":"d4e5f6a7b8c9d0e1","fromSide":"bottom","toNode":"a7b8c9d0e1f2a3b4","toSide":"top","color":"4","label":"高级方案"},
+		{"id":"e7f8a9b0c1d2e3f4","fromNode":"e5f6a7b8c9d0e1f2","fromSide":"bottom","toNode":"b8c9d0e1f2a3b4c5","toSide":"top","label":"对比"},
+		{"id":"f8a9b0c1d2e3f4a5","fromNode":"f6a7b8c9d0e1f2a3","fromSide":"bottom","toNode":"b8c9d0e1f2a3b4c5","toSide":"top","label":"对比"},
+		{"id":"a9b0c1d2e3f4a5b6","fromNode":"a7b8c9d0e1f2a3b4","fromSide":"bottom","toNode":"b8c9d0e1f2a3b4c5","toSide":"top","label":"对比"},
+		{"id":"b0c1d2e3f4a5b6c7","fromNode":"b8c9d0e1f2a3b4c5","fromSide":"bottom","toNode":"c9d0e1f2a3b4c5d6","toSide":"top","color":"5","label":"行动指南"}
+	]
+}

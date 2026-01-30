@@ -1,0 +1,28 @@
+{
+	"nodes":[
+		{"id":"fb43cc0961943565","x":43,"y":893,"width":250,"height":60,"type":"text","text":"Karabiner-Elements"},
+		{"id":"impact","type":"text","text":"## 全球影响\n\n### 规模\n- 工业化诈骗\n- 数百万潜在受害者\n- 全球影子经济\n\n### 时间线\n- 2011: 赌博网络开始\n- 2016: PBaaS 兴起\n- 2025-2026: 持续活跃","x":200,"y":800,"width":300,"height":280,"color":"5"},
+		{"id":"uwork","type":"text","text":"## UWORK\n\n**CRM 平台提供商**\n\n### 核心功能\n- 投资诈骗网站模板\n- MetaTrader 集成\n- KYC 面板\n- 管理员控制面板\n- 代理管理系统","x":300,"y":-300,"width":300,"height":280,"color":"1"},
+		{"id":"pricing","type":"text","text":"## 服务定价\n\n- **基础模板**: $50\n- **完整套餐**: $2,500+\n  - 网站 + 管理权限\n  - VPS 托管\n  - 移动应用\n  - 交易平台\n  - 空壳公司\n  - 金融监管注册","x":-580,"y":100,"width":300,"height":260,"color":"3"},
+		{"id":"tech","type":"text","text":"## 技术栈\n\n### 移动端\n- Android APK 分发\n- iOS TestFlight 绕过\n- 密码触发隐藏功能\n\n### 基础设施\n- 4G/5G 路由器\n- IMSI 捕获器\n- 批量 SIM 卡","x":300,"y":100,"width":300,"height":260,"color":"4"},
+		{"id":"threats","type":"text","text":"## 相关威胁\n\n### Evilginx AitM\n- 67个域名\n- 18所美国大学\n- 凭证收集\n\n### 停放域名\n- 90%重定向恶意内容\n- 设备指纹识别\n- IP地理定位","x":-150,"y":450,"width":300,"height":260,"color":"6"},
+		{"id":"source","type":"file","file":"webclips/2026-01-12 WEB Researchers Uncover Service Providers Fueling Industrial-Scale Pig Butchering Fraud.md","x":-250,"y":1220,"width":500,"height":420,"color":"3"},
+		{"id":"operations","type":"text","text":"## 诈骗园区运营\n\n### 地点\n- 金三角经济特区(GTSEZ)\n- 东南亚特殊经济区\n\n### 人员\n- 数千名被迫劳工\n- 护照被没收\n- 暴力威胁控制\n\n**性质**: 人口贩运","x":300,"y":450,"width":300,"height":280,"color":"2"},
+		{"id":"central","type":"text","text":"# 杀猪盘即服务(PBaaS)\n\n工业化诈骗生态系统","x":-120,"y":-240,"width":240,"height":160,"color":"5"},
+		{"id":"victims","type":"text","text":"## 受害者\n\n### 诱骗手段\n- 被盗社交媒体账号\n- 角色素材包(假照片)\n- AI 自动化互动\n- 假投资平台\n\n### 数据收集\n- KYC 身份验证\n- 个人敏感信息","x":-580,"y":470,"width":300,"height":260,"color":"2"},
+		{"id":"apt","type":"text","text":"## APT 级别威胁\n\n### 印尼赌博网络\n- 328,000+ 域名\n- 活跃自 2011年\n- AWS S3 恶意软件\n- WordPress 劫持\n- 国家级资源\n\n**评估**: 可能的国家支持","x":-580,"y":880,"width":300,"height":280,"color":"6"},
+		{"id":"penguin","type":"text","text":"## Penguin Account Store\n\n**别名**: 天堂联盟/海外联盟\n\n### 提供服务\n- 社交媒体账号 ($0.10起)\n- 欺诈工具包\n- 社工库数据\n- SCRM AI 平台\n- BCD Pay 支付系统","x":-580,"y":-300,"width":300,"height":280,"color":"1"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"penguin","fromSide":"right","toNode":"central","toSide":"left","label":"服务提供商"},
+		{"id":"e2","fromNode":"uwork","fromSide":"left","toNode":"central","toSide":"right","label":"服务提供商"},
+		{"id":"e3","fromNode":"central","fromSide":"bottom","toNode":"pricing","toSide":"top","label":"定价模式"},
+		{"id":"e4","fromNode":"central","fromSide":"bottom","toNode":"tech","toSide":"top","label":"技术实现"},
+		{"id":"e5","fromNode":"pricing","fromSide":"bottom","toNode":"victims","toSide":"top","label":"针对"},
+		{"id":"e6","fromNode":"tech","fromSide":"bottom","toNode":"operations","toSide":"top","label":"支持"},
+		{"id":"e7","fromNode":"central","fromSide":"bottom","toNode":"threats","toSide":"top","label":"关联威胁"},
+		{"id":"e8","fromNode":"threats","fromSide":"bottom","toNode":"apt","toSide":"top","label":"演化为"},
+		{"id":"e9","fromNode":"operations","fromSide":"bottom","toNode":"impact","toSide":"top","label":"造成"},
+		{"id":"e10","fromNode":"source","fromSide":"top","toNode":"central","toSide":"bottom","label":"来源文档"}
+	]
+}
