@@ -292,26 +292,37 @@ mcp__serena__write_memory("refactor_base_service", "重构完成，execute → r
 
 ---
 
-### 3️⃣ Claude Code + Codex + Gemini CLI：多模型协同
+### 3️⃣ Claude Code + Codex + Gemini CLI + Grok：多模型协同
 
 > [!success] 效率提升：**开发效率提升 2-3 倍，代码质量提升 30-40%**
+
+#### 核心工具特点
+
+| 工具 | 核心能力 | 最佳使用场景 |
+|------|---------|-------------|
+| **Claude Code** | 代码理解与生成 | 日常开发、代码重构、问题解决 |
+| **Codex MCP** | 深度代码分析 | 复杂架构分析、代码审查 |
+| **Gemini CLI** | UI 生成与前端 | 前端界面快速生成 |
+| **Grok** | 搜索能力显著，受限制少 | 快速获取技术资料、最新文档查询 |
 
 #### 协同架构
 
 ```mermaid
 graph LR
-    A[需求分析] --> B{复杂度判断}
-    B -->|简单| C[Claude Code 直接处理]
-    B -->|复杂| D[Codex MCP 深度分析]
-    B -->|前端| E[Gemini CLI UI 生成]
+    A[需求分析] --> B{任务类型判断}
+    B -->|简单开发| C[Claude Code 直接处理]
+    B -->|复杂分析| D[Codex MCP 深度分析]
+    B -->|前端UI| E[Gemini CLI UI 生成]
+    B -->|技术调研| F[Grok 搜索资料]
 
-    C --> F[代码实现]
-    D --> F
-    E --> F
+    C --> G[代码实现]
+    D --> G
+    E --> G
+    F --> G
 
-    F --> G[Codex 代码审查]
-    G --> H{质量检查}
-    H -->|通过| I[提交代码]
+    G --> H[Codex 代码审查]
+    H --> I{质量检查}
+    I -->|通过| J[提交代码]
     H -->|不通过| F
 ```
 
