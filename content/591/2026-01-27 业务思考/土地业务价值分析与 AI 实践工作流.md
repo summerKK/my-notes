@@ -160,6 +160,20 @@ graph LR
 
 ### 2️⃣ Serena MCP：智能代码助手
 
+> [!info] 什么是 Serena MCP？
+> **Serena MCP** 是一个基于 Model Context Protocol (MCP) 的智能代码理解工具，通过集成 JetBrains IDE 的语言服务器协议（LSP），为 AI 助手提供语义级的代码理解能力。
+>
+> **核心特点**：
+> - 🎯 **语义级理解**：不是简单的文本搜索，而是真正理解代码结构和语义
+> - 🔍 **符号级定位**：精准定位函数、类、变量的定义和引用
+> - 🧠 **项目记忆**：跨会话保持项目上下文，无需重复分析
+> - 🚀 **性能优化**：代码定位速度提升 5-10 倍，Token 消耗降低 40-60%
+> - 🔗 **IDE 集成**：深度集成 JetBrains 全系列 IDE（IntelliJ IDEA、PyCharm、WebStorm 等）
+>
+> **为什么需要 Serena MCP？**
+> - ❌ **传统方式**：Claude Code + grep 命令 → 文本匹配 → 误报率高 → Token 浪费
+> - ✅ **Serena 方式**：语义理解 → 精准定位 → 高效准确 → Token 节省
+
 > [!success] 效率提升：**代码定位速度提升 5-10 倍，Token 消耗降低 40-60%**
 
 #### 核心优势
