@@ -1,5 +1,26 @@
+---
+title: OpenCode & Oh My OpenCode 快速掌握指南
+created: 2026-02-06
+updated: 2026-02-06
+tags:
+  - AI
+  - 编程工具
+  - OpenCode
+  - 开发工具
+  - AI助手
+  - 多Agent系统
+aliases:
+  - OpenCode指南
+  - OMO指南
+description: OpenCode 和 Oh My OpenCode 的完整使用指南，包含安装、配置、核心操作和最佳实践
+status: 完成
+---
 
-> 整理时间：2026-02-06
+# OpenCode & Oh My OpenCode 快速掌握指南
+
+> [!info] 文档信息
+> **整理时间**：2026-02-06
+> **适用版本**：OpenCode 最新版 + Oh My OpenCode 最新版
 
 ---
 
@@ -9,9 +30,10 @@
 
 OpenCode 是一个**开源 AI 编程助手**，提供终端 TUI、桌面应用和 IDE 扩展三种形态。你可以接入 Claude、GPT、Gemini 等任意模型。
 
-- 官网：https://opencode.ai
-- GitHub：https://github.com/anomalyco/opencode
-- 文档：https://opencode.ai/docs/
+> [!tip] 官方资源
+> - 🌐 官网：[https://opencode.ai](https://opencode.ai)
+> - 💻 GitHub：[https://github.com/anomalyco/opencode](https://github.com/anomalyco/opencode)
+> - 📚 文档：[https://opencode.ai/docs/](https://opencode.ai/docs/)
 
 ---
 
@@ -58,7 +80,8 @@ brew install anomalyco/tap/opencode
 | **Plan 模式** | AI 只出方案不改代码，用于讨论设计 |
 | **Build 模式** | AI 直接修改代码，用于实际开发 |
 
-**最佳实践**：先 Plan → 确认方案 → 切 Build → 让它动手。
+> [!tip] 最佳实践
+> 先 Plan → 确认方案 → 切 Build → 让它动手。
 
 ---
 
@@ -66,31 +89,32 @@ brew install anomalyco/tap/opencode
 
 默认 Leader 键是 **`Ctrl+X`**，先按 Leader 再按功能键：
 
-| 快捷键            | 功能               |
+| 快捷键 | 功能 |
 | -------------- | ---------------- |
-| `Ctrl+X` → `n` | 新会话              |
-| `Ctrl+X` → `l` | 会话列表             |
-| `Ctrl+X` → `m` | 切换模型             |
+| `Ctrl+X` → `n` | 新会话 |
+| `Ctrl+X` → `l` | 会话列表 |
+| `Ctrl+X` → `m` | 切换模型 |
 | `Ctrl+X` → `e` | 打开外部编辑器写长 prompt |
-| `Ctrl+X` → `u` | 撤销               |
-| `Ctrl+X` → `r` | 重做               |
-| `Ctrl+X` → `c` | 压缩上下文            |
-| `Ctrl+X` → `b` | 切换侧边栏            |
-| `Ctrl+X` → `s` | 分享对话             |
-| `Ctrl+X` → `t` | 切换主题             |
-| `Ctrl+X` → `h` | 帮助               |
-| `Ctrl+X` → `q` | 退出               |
-| `F2`           | 快速切换最近用过的模型      |
-| `Escape`       | 中断当前生成           |
+| `Ctrl+X` → `u` | 撤销 |
+| `Ctrl+X` → `r` | 重做 |
+| `Ctrl+X` → `c` | 压缩上下文 |
+| `Ctrl+X` → `b` | 切换侧边栏 |
+| `Ctrl+X` → `s` | 分享对话 |
+| `Ctrl+X` → `t` | 切换主题 |
+| `Ctrl+X` → `h` | 帮助 |
+| `Ctrl+X` → `q` | 退出 |
+| `F2` | 快速切换最近用过的模型 |
+| `Escape` | 中断当前生成 |
 
 ---
 
 ### 六、高效 Prompt 技巧
 
-1. **引用具体文件**：`看看 @src/auth.ts 的认证逻辑有什么问题`
-2. **参考已有实现**：`参照 @src/notes.ts 的做法，给 settings 路由加上认证`
-3. **拖入图片**：直接拖图片到终端，AI 能看图理解设计稿
-4. **给足上下文**：像跟初级工程师说话一样，说清楚你要什么
+> [!tip] Prompt 最佳实践
+> 1. **引用具体文件**：`看看 @src/auth.ts 的认证逻辑有什么问题`
+> 2. **参考已有实现**：`参照 @src/notes.ts 的做法，给 settings 路由加上认证`
+> 3. **拖入图片**：直接拖图片到终端，AI 能看图理解设计稿
+> 4. **给足上下文**：像跟初级工程师说话一样，说清楚你要什么
 
 ---
 
@@ -114,11 +138,11 @@ agent: plan
 
 然后用 `/review src/api.ts` 即可触发。
 
-**支持的占位符**：
-- `$ARGUMENTS` — 全部参数
-- `$1`, `$2`, `$3` — 位置参数
-- `` !`命令` `` — 注入 shell 输出
-- `@文件路径` — 引用文件内容
+> [!note] 支持的占位符
+> - `$ARGUMENTS` — 全部参数
+> - `$1`, `$2`, `$3` — 位置参数
+> - `` !`命令` `` — 注入 shell 输出
+> - `@文件路径` — 引用文件内容
 
 **命令位置**：
 - 全局：`~/.config/opencode/commands/`
@@ -146,12 +170,13 @@ agent: plan
 
 ### 九、快速上手路径
 
-1. 安装 → `/connect` 配置 API Key
-2. 进入项目目录 → `opencode`
-3. `/init` 初始化项目
-4. `Tab` 切到 Plan 模式讨论方案
-5. 确认后 `Tab` 切回 Build 让它写代码
-6. 不满意就 `/undo`，改 prompt 重来
+> [!success] 快速开始
+> 1. 安装 → `/connect` 配置 API Key
+> 2. 进入项目目录 → `opencode`
+> 3. `/init` 初始化项目
+> 4. `Tab` 切到 Plan 模式讨论方案
+> 5. 确认后 `Tab` 切回 Build 让它写代码
+> 6. 不满意就 `/undo`，改 prompt 重来
 
 ---
 
@@ -163,10 +188,12 @@ agent: plan
 
 Oh My OpenCode（简称 OMO）是 OpenCode 的**插件/增强层**，把 OpenCode 从一个 AI 编码助手变成一个**多 Agent 协作系统**。
 
-- GitHub：https://github.com/code-yeongyu/oh-my-opencode
-- 28k+ Stars，免费开源
+> [!info] 项目信息
+> - 💻 GitHub：[https://github.com/code-yeongyu/oh-my-opencode](https://github.com/code-yeongyu/oh-my-opencode)
+> - ⭐ 28k+ Stars，免费开源
 
-核心理念：**你不再是写代码的人，你是 AI 团队的经理。**
+> [!quote] 核心理念
+> **你不再是写代码的人，你是 AI 团队的经理。**
 
 ---
 
@@ -187,18 +214,17 @@ bunx oh-my-opencode install
 
 交互式安装器会问你有哪些 API provider（Claude、OpenAI、Gemini 等），自动生成最优配置。
 
-**卸载**：
-
-```bash
-# 1. 从 opencode.json 移除插件
-jq '.plugin = [.plugin[] | select(. != "oh-my-opencode")]' \
-    ~/.config/opencode/opencode.json > /tmp/oc.json && \
-    mv /tmp/oc.json ~/.config/opencode/opencode.json
-
-# 2. 删除配置文件（可选）
-rm -f ~/.config/opencode/oh-my-opencode.json
-rm -f .opencode/oh-my-opencode.json
-```
+> [!warning] 卸载方法
+> ```bash
+> # 1. 从 opencode.json 移除插件
+> jq '.plugin = [.plugin[] | select(. != "oh-my-opencode")]' \
+>     ~/.config/opencode/opencode.json > /tmp/oc.json && \
+>     mv /tmp/oc.json ~/.config/opencode/opencode.json
+>
+> # 2. 删除配置文件（可选）
+> rm -f ~/.config/opencode/oh-my-opencode.json
+> rm -f .opencode/oh-my-opencode.json
+> ```
 
 ---
 
@@ -212,12 +238,12 @@ rm -f .opencode/oh-my-opencode.json
 ulw 给我的 Next.js 项目加上用户认证
 ```
 
-Agent 会自动：
-1. 探索代码库理解现有模式
-2. 通过专业 Agent 研究最佳实践
-3. 按你的代码风格实现功能
-4. 用诊断和测试验证
-5. 持续工作直到完成
+> [!success] Agent 会自动
+> 1. 探索代码库理解现有模式
+> 2. 通过专业 Agent 研究最佳实践
+> 3. 按你的代码风格实现功能
+> 4. 用诊断和测试验证
+> 5. 持续工作直到完成
 
 **适合**：日常开发、快速任务、不想操心细节的时候。
 
@@ -234,7 +260,8 @@ Agent 会自动：
 
 **适合**：复杂重构、生产环境变更、跨多文件的大型任务、多天项目。
 
-> ⚠️ **注意**：Prometheus 和 Atlas（编排器）是一对，必须一起用。不要单独使用 Atlas。
+> [!warning] 重要提示
+> Prometheus 和 Atlas（编排器）是一对，必须一起用。不要单独使用 Atlas。
 
 ---
 
@@ -272,18 +299,19 @@ Agent 会自动：
 
 ### 六、关键特性
 
-1. **后台并行 Agent**：多个 Agent 同时工作，像真正的开发团队
-2. **LSP + AST-Grep**：重构不靠文本替换，用语义级工具，更安全更精确
-3. **Todo 强制续航**：Agent 不会半途而废，系统会强制它继续（"bouldering" 模式）
-4. **注释检查器**：防止 AI 生成过多注释，代码看起来像人写的
-5. **Session 工具**：可以搜索、回顾、分析历史对话
-6. **自定义命令/技能**：`.opencode/commands/` 和 `.opencode/skills/`
-7. **Claude Code 兼容层**：完整的 Hook 系统（PreToolUse, PostToolUse, UserPromptSubmit, Stop）
-8. **内置 MCP**：
-   - Exa（Web 搜索）
-   - Context7（官方文档查询）
-   - Grep.app（GitHub 代码搜索）
-9. **Tmux 集成**：支持交互式终端操作
+> [!tip] 核心功能
+> 1. **后台并行 Agent**：多个 Agent 同时工作，像真正的开发团队
+> 2. **LSP + AST-Grep**：重构不靠文本替换，用语义级工具，更安全更精确
+> 3. **Todo 强制续航**：Agent 不会半途而废，系统会强制它继续（"bouldering" 模式）
+> 4. **注释检查器**：防止 AI 生成过多注释，代码看起来像人写的
+> 5. **Session 工具**：可以搜索、回顾、分析历史对话
+> 6. **自定义命令/技能**：`.opencode/commands/` 和 `.opencode/skills/`
+> 7. **Claude Code 兼容层**：完整的 Hook 系统（PreToolUse, PostToolUse, UserPromptSubmit, Stop）
+> 8. **内置 MCP**：
+>    - Exa（Web 搜索）
+>    - Context7（官方文档查询）
+>    - Grep.app（GitHub 代码搜索）
+> 9. **Tmux 集成**：支持交互式终端操作
 
 ---
 
@@ -317,36 +345,40 @@ Agent 会自动：
 }
 ```
 
-**模型 Fallback 机制**：每个 Agent 有 provider 优先链，系统按顺序尝试直到找到可用模型。例如：
-```
-multimodal-looker: google → openai → anthropic → opencode
-                   gemini    gpt-5.2   haiku      gpt-5-nano
-```
+> [!note] 模型 Fallback 机制
+> 每个 Agent 有 provider 优先链，系统按顺序尝试直到找到可用模型。例如：
+> ```
+> multimodal-looker: google → openai → anthropic → opencode
+>                    gemini    gpt-5.2   haiku      gpt-5-nano
+> ```
 
 ---
 
 ### 八、快速上手路径
 
-```
-1. 装好 OMO 后，进入项目目录运行 opencode
-2. 简单任务 → 输入 "ulw 你的需求"，喝咖啡等结果
-3. 复杂任务 → Tab → 跟 Prometheus 对话 → /start-work
-4. 不满意 → /undo 撤销，改 prompt 重来
-5. 想了解代码库 → 直接问，Agent 会自动派探索者去查
-6. 中断了 → /sessions 恢复，Todo 系统记住了进度
-```
+> [!success] 快速开始
+> ```
+> 1. 装好 OMO 后，进入项目目录运行 opencode
+> 2. 简单任务 → 输入 "ulw 你的需求"，喝咖啡等结果
+> 3. 复杂任务 → Tab → 跟 Prometheus 对话 → /start-work
+> 4. 不满意 → /undo 撤销，改 prompt 重来
+> 5. 想了解代码库 → 直接问，Agent 会自动派探索者去查
+> 6. 中断了 → /sessions 恢复，Todo 系统记住了进度
+> ```
 
-**核心心法**：你不需要告诉 Agent 怎么做，只需要告诉它**做什么**。`ulw` 三个字母就够了。
+> [!quote] 核心心法
+> 你不需要告诉 Agent 怎么做，只需要告诉它**做什么**。`ulw` 三个字母就够了。
 
 ---
 
 ## 参考链接
 
-- OpenCode 官网：https://opencode.ai
-- OpenCode 文档：https://opencode.ai/docs/
-- Oh My OpenCode GitHub：https://github.com/code-yeongyu/oh-my-opencode
-- OMO 功能文档：https://github.com/code-yeongyu/oh-my-opencode/blob/dev/docs/features.md
-- OMO 配置文档：https://github.com/code-yeongyu/oh-my-opencode/blob/dev/docs/configurations.md
-- OMO 编排系统：https://github.com/code-yeongyu/oh-my-opencode/blob/dev/docs/guide/understanding-orchestration-system.md
-- Ultrawork 宣言：https://github.com/code-yeongyu/oh-my-opencode/blob/dev/docs/ultrawork-manifesto.md
-- Discord 社区：https://discord.gg/PUwSMR9XNk
+> [!info] 官方资源
+> - 🌐 [OpenCode 官网](https://opencode.ai)
+> - 📚 [OpenCode 文档](https://opencode.ai/docs/)
+> - 💻 [Oh My OpenCode GitHub](https://github.com/code-yeongyu/oh-my-opencode)
+> - 📖 [OMO 功能文档](https://github.com/code-yeongyu/oh-my-opencode/blob/dev/docs/features.md)
+> - ⚙️ [OMO 配置文档](https://github.com/code-yeongyu/oh-my-opencode/blob/dev/docs/configurations.md)
+> - 🏗️ [OMO 编排系统](https://github.com/code-yeongyu/oh-my-opencode/blob/dev/docs/guide/understanding-orchestration-system.md)
+> - 📜 [Ultrawork 宣言](https://github.com/code-yeongyu/oh-my-opencode/blob/dev/docs/ultrawork-manifesto.md)
+> - 💬 [Discord 社区](https://discord.gg/PUwSMR9XNk)
