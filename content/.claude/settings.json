@@ -4,5 +4,8 @@
     "allow": [],
     "deny": [],
     "ask": []
+  },
+  "enabledPlugins": {
+    "example-skills@anthropic-agent-skills": false
   }
 }
