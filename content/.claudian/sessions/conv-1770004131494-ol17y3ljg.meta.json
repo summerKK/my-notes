@@ -1,0 +1,20 @@
+{
+  "id": "conv-1770004131494-ol17y3ljg",
+  "title": "Refactor article using Obsidian Markdown syntax",
+  "titleGenerationStatus": "success",
+  "createdAt": 1770004131495,
+  "updatedAt": 1770347758356,
+  "lastResponseAt": 1770086335248,
+  "sessionId": "b9334112-fb25-4500-83a3-ca25cb311df8",
+  "sdkSessionId": "b9334112-fb25-4500-83a3-ca25cb311df8",
+  "currentNote": "加密货币/2026年1月30日加密货币与贵金属市场暴跌深度研究报告.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 80,
+    "cacheCreationInputTokens": 16651,
+    "cacheReadInputTokens": 127160,
+    "contextWindow": 200000,
+    "contextTokens": 143891,
+    "percentage": 72
+  }
+}

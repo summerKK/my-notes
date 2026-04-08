@@ -1,0 +1,20 @@
+{
+  "id": "conv-1769597849683-8kb8lunjy",
+  "title": "Optimize Obsidian markdown draft with AI practi...",
+  "titleGenerationStatus": "success",
+  "createdAt": 1769597849684,
+  "updatedAt": 1770347757061,
+  "lastResponseAt": 1769598704831,
+  "sessionId": "882de453-964d-47d2-a4c8-ec6feb1d6b9a",
+  "sdkSessionId": "882de453-964d-47d2-a4c8-ec6feb1d6b9a",
+  "currentNote": "591/2026-01-27 业务思考/草稿.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 214,
+    "cacheCreationInputTokens": 9137,
+    "cacheReadInputTokens": 79601,
+    "contextWindow": 200000,
+    "contextTokens": 88952,
+    "percentage": 44
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "conv-1770273449340-vdj59y243",
+  "title": "Analyze crypto market crash and financial corre...",
+  "titleGenerationStatus": "success",
+  "createdAt": 1770273449341,
+  "updatedAt": 1770347761484,
+  "lastResponseAt": 1770273808273,
+  "sessionId": "e3d57c38-3636-4e00-8254-a7363660b8ca",
+  "sdkSessionId": "e3d57c38-3636-4e00-8254-a7363660b8ca",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 82,
+    "cacheCreationInputTokens": 7955,
+    "cacheReadInputTokens": 75601,
+    "contextWindow": 200000,
+    "contextTokens": 83638,
+    "percentage": 42
+  }
+}

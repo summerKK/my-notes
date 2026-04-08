@@ -1,0 +1,19 @@
+{
+  "id": "conv-1772175379217-tcyyqi4tn",
+  "title": "Generate science article from AI conversation",
+  "titleGenerationStatus": "success",
+  "createdAt": 1772175379217,
+  "updatedAt": 1772588895795,
+  "lastResponseAt": 1772175641363,
+  "sessionId": "3cb1bd65-63bb-44d8-b3ca-e077f874b9c4",
+  "sdkSessionId": "3cb1bd65-63bb-44d8-b3ca-e077f874b9c4",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 1,
+    "cacheCreationInputTokens": 62297,
+    "cacheReadInputTokens": 14374,
+    "contextWindow": 200000,
+    "contextTokens": 76672,
+    "percentage": 38
+  }
+}

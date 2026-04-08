@@ -1,0 +1,20 @@
+{
+  "id": "af6dfd10-81f6-42e8-a0c3-e18304f1d067",
+  "title": "Organize conversation with Obsidian markdown",
+  "titleGenerationStatus": "success",
+  "createdAt": 1768974852528,
+  "updatedAt": 1769597879439,
+  "lastResponseAt": 1768974852531,
+  "sessionId": "af6dfd10-81f6-42e8-a0c3-e18304f1d067",
+  "sdkSessionId": "af6dfd10-81f6-42e8-a0c3-e18304f1d067",
+  "currentNote": "gemini-communication/深圳龙华宝宝体检地点推荐_2026-01-21T103401+0800.md",
+  "usage": {
+    "model": "glm-4.7",
+    "inputTokens": 66590,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 289152,
+    "contextWindow": 200000,
+    "contextTokens": 355742,
+    "percentage": 100
+  }
+}

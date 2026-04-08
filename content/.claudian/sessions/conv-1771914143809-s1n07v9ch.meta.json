@@ -1,0 +1,20 @@
+{
+  "id": "conv-1771914143809-s1n07v9ch",
+  "title": "Optimize and restructure Obsidian Markdown article",
+  "titleGenerationStatus": "success",
+  "createdAt": 1771914143809,
+  "updatedAt": 1772588874399,
+  "lastResponseAt": 1771914357998,
+  "sessionId": "969d9452-3ee3-48d7-b5da-3c80cf719ca9",
+  "sdkSessionId": "969d9452-3ee3-48d7-b5da-3c80cf719ca9",
+  "currentNote": "AI/AI编码代理集成方式全景解读.md",
+  "usage": {
+    "model": "opus",
+    "inputTokens": 93,
+    "cacheCreationInputTokens": 7924,
+    "cacheReadInputTokens": 91193,
+    "contextWindow": 200000,
+    "contextTokens": 99210,
+    "percentage": 50
+  }
+}

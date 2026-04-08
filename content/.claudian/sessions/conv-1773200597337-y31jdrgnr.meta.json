@@ -1,0 +1,20 @@
+{
+  "id": "conv-1773200597337-y31jdrgnr",
+  "title": "Reorganize markdown with Obsidian format",
+  "titleGenerationStatus": "success",
+  "createdAt": 1773200597338,
+  "updatedAt": 1773201088306,
+  "lastResponseAt": 1773201088306,
+  "sessionId": "f038ae1b-0e8a-488b-b7e4-a507a9f6f4d2",
+  "sdkSessionId": "f038ae1b-0e8a-488b-b7e4-a507a9f6f4d2",
+  "currentNote": "AI/2D 平面图转 3D 逼真室内设计视频 - 完整工作流.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 77,
+    "cacheCreationInputTokens": 8260,
+    "cacheReadInputTokens": 82185,
+    "contextWindow": 200000,
+    "contextTokens": 90522,
+    "percentage": 45
+  }
+}

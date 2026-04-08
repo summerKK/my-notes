@@ -1,0 +1,20 @@
+{
+  "id": "049dd7d1-4867-445c-8ee2-6357620968da",
+  "title": "使用 obsidian-markdown skill 整理一下这篇我与 Gemini 的对话",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1768964802012,
+  "updatedAt": 1769597880822,
+  "lastResponseAt": 1768966076884,
+  "sessionId": "049dd7d1-4867-445c-8ee2-6357620968da",
+  "sdkSessionId": "049dd7d1-4867-445c-8ee2-6357620968da",
+  "currentNote": "gemini-communication/深圳龙华宝宝体检地点推荐_2026-01-21T103401+0800.md",
+  "usage": {
+    "model": "claude-sonnet-4-5-20250929",
+    "inputTokens": 33257,
+    "cacheCreationInputTokens": 17839,
+    "cacheReadInputTokens": 233483,
+    "contextWindow": 200000,
+    "contextTokens": 284579,
+    "percentage": 100
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "conv-1772589318976-qw6gv0nkl",
+  "title": "Optimize Gemini chat into Obsidian science article",
+  "titleGenerationStatus": "success",
+  "createdAt": 1772589318976,
+  "updatedAt": 1773200336677,
+  "lastResponseAt": 1772594256699,
+  "sessionId": "6c2fe44f-d4a1-4bd1-ae06-f5016ea8d8c2",
+  "sdkSessionId": "6c2fe44f-d4a1-4bd1-ae06-f5016ea8d8c2",
+  "usage": {
+    "model": "opus",
+    "inputTokens": 1,
+    "cacheCreationInputTokens": 78329,
+    "cacheReadInputTokens": 14367,
+    "contextWindow": 200000,
+    "contextTokens": 92697,
+    "percentage": 46
+  }
+}

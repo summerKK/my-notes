@@ -1,0 +1,11 @@
+{
+  "id": "conv-1775644227770-r55k9onyi",
+  "providerId": "codex",
+  "title": "hello",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1775644227770,
+  "updatedAt": 1775644227926,
+  "lastResponseAt": 1775644227926,
+  "sessionId": null,
+  "currentNote": "前端/深入解析 Vue 3 响应式系统：Proxy、依赖收集与性能优化.md"
+}

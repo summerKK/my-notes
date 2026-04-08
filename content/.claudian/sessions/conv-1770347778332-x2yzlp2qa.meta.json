@@ -1,0 +1,20 @@
+{
+  "id": "conv-1770347778332-x2yzlp2qa",
+  "title": "Optimize Obsidian Markdown syntax",
+  "titleGenerationStatus": "success",
+  "createdAt": 1770347778332,
+  "updatedAt": 1772588877256,
+  "lastResponseAt": 1770347892447,
+  "sessionId": "cf1e2490-408c-45b0-b5b6-9a477c104995",
+  "sdkSessionId": "cf1e2490-408c-45b0-b5b6-9a477c104995",
+  "currentNote": "AI/OpenCode & Oh My OpenCode 快速掌握指南.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 4794,
+    "cacheCreationInputTokens": 8090,
+    "cacheReadInputTokens": 83707,
+    "contextWindow": 200000,
+    "contextTokens": 96591,
+    "percentage": 48
+  }
+}
