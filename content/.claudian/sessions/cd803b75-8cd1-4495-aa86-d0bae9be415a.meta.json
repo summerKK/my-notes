@@ -1,0 +1,19 @@
+{
+  "id": "cd803b75-8cd1-4495-aa86-d0bae9be415a",
+  "title": "Google's AI journey from Transformer to Gemini",
+  "titleGenerationStatus": "success",
+  "createdAt": 1768643435793,
+  "updatedAt": 1768928307679,
+  "lastResponseAt": 1768643897281,
+  "sessionId": "cd803b75-8cd1-4495-aa86-d0bae9be415a",
+  "sdkSessionId": "cd803b75-8cd1-4495-aa86-d0bae9be415a",
+  "usage": {
+    "model": "claude-sonnet-4-5-20250929",
+    "inputTokens": 35326,
+    "cacheCreationInputTokens": 83375,
+    "cacheReadInputTokens": 694904,
+    "contextWindow": 200000,
+    "contextTokens": 813605,
+    "percentage": 100
+  }
+}

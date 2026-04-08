@@ -1,0 +1,19 @@
+{
+  "id": "conv-1773501416342-o0yicfkdy",
+  "title": "整理一下这个文章，markdown 格式。放到 AI 目录里面",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1773501416342,
+  "updatedAt": 1775659503723,
+  "lastResponseAt": 1773503123095,
+  "sessionId": "829d08e8-df70-47e6-aeb0-e55c280df665",
+  "sdkSessionId": "829d08e8-df70-47e6-aeb0-e55c280df665",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 77,
+    "cacheCreationInputTokens": 11754,
+    "cacheReadInputTokens": 112227,
+    "contextWindow": 200000,
+    "contextTokens": 124058,
+    "percentage": 62
+  }
+}

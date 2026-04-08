@@ -42,13 +42,15 @@
       "safeMode": "workspace-write",
       "cliPath": "",
       "cliPathsByHost": {
-        "chensibeideMacBook-Pro-M1-6.local": "/Users/summer/.nvm/versions/node/v22.20.0/bin/codex"
+        "chensibeideMacBook-Pro-M1-6.local": "/Users/summer/.nvm/versions/node/v22.20.0/bin/codex",
+        "Mac.lan": "/Users/summer/.nvm/versions/node/v23.8.0/bin/codex"
       },
       "reasoningSummary": "detailed",
       "environmentVariables": "",
       "environmentHash": "",
       "installationMethodsByHost": {
-        "chensibeideMacBook-Pro-M1-6.local": "native-windows"
+        "chensibeideMacBook-Pro-M1-6.local": "native-windows",
+        "Mac.lan": "native-windows"
       },
       "wslDistroOverridesByHost": {}
     }

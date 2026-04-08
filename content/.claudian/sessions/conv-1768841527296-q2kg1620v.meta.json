@@ -1,0 +1,30 @@
+{
+  "id": "conv-1768841527296-q2kg1620v",
+  "title": "/baoyu-cover-image @加密货币/2026年1月19日BTC、ETH暴跌深度分析报告",
+  "titleGenerationStatus": "pending",
+  "createdAt": 1768841527296,
+  "updatedAt": 1768928211538,
+  "lastResponseAt": 1768842067896,
+  "sessionId": "4e6100f1-7f4f-4339-9133-fc508c9a7910",
+  "sdkSessionId": "4e6100f1-7f4f-4339-9133-fc508c9a7910",
+  "currentNote": "加密货币/2026年1月19日BTC、ETH暴跌深度分析报告.md",
+  "usage": {
+    "model": "claude-sonnet-4-5-20250929",
+    "inputTokens": 11197,
+    "cacheCreationInputTokens": 50973,
+    "cacheReadInputTokens": 516188,
+    "contextWindow": 200000,
+    "contextTokens": 578358,
+    "percentage": 100
+  },
+  "toolDiffData": {
+    "tooluse__dyrJOU9SNavx87oICWcOw": {
+      "filePath": "cover-image/crypto-crash-jan19/prompts/cover.md",
+      "originalContent": "",
+      "newContent": "封面主题：加密货币暴跌\n风格：editorial-infographic\n宽高比：1:1\n\n标题文字：暴跌警示\n副标题：BTC/ETH市场分析\n\n视觉构图：\n- 主视觉：下跌的K线图或趋势线，从左上向右下急剧下降，用红色表示\n- 数据元素：显示关键数字 -3% (BTC)、-2.7% (ETH)、$6.8亿清算\n- 布局：上方标题区，中央主图表，下方数据标签\n- 装饰元素：网格背景、数据点、箭头指示器、专业图表元素\n\n配色方案：\n- 主色：深红色 (#DC2626) - 表示下跌和警示\n- 背景：浅灰白色 (#F9FAFB) - 专业杂志风格\n- 强调色：深蓝色 (#1E40AF) - 数据和文字\n\n风格特点：\n- 杂志式专业排版\n- 清晰的信息层次\n- 数据可视化图表\n- 现代简洁的设计语言\n- 适合社交媒体分享的正方形格式\n"
+    }
+  },
+  "displayContentMap": {
+    "e42715f5-456d-4fc1-ba47-b5b9492a8de6": "/baoyu-cover-image @加密货币/2026年1月19日BTC、ETH暴跌深度分析报告.md"
+  }
+}
