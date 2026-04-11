@@ -1,0 +1,24 @@
+{
+  "id": "conv-1775923499886-uw19kvqbo",
+  "providerId": "claude",
+  "title": "Handle initial greeting",
+  "titleGenerationStatus": "success",
+  "createdAt": 1775923499887,
+  "updatedAt": 1775924128450,
+  "lastResponseAt": 1775924128450,
+  "sessionId": "fe6fffff-1050-415f-a6a8-fee2d1472a4a",
+  "providerState": {
+    "providerSessionId": "fe6fffff-1050-415f-a6a8-fee2d1472a4a"
+  },
+  "currentNote": "Clippings/Karpathy 最新分享：用 LLM 搭建个人知识库，告别 RAG 的低效循环.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 68058,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 68058,
+    "percentage": 34,
+    "contextWindowIsAuthoritative": true
+  }
+}

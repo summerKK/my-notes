@@ -6,6 +6,9 @@
     "ask": []
   },
   "enabledPlugins": {
-    "example-skills@anthropic-agent-skills": false
+    "example-skills@anthropic-agent-skills": false,
+    "claude-mem@thedotmack": false,
+    "planning-with-files@planning-with-files": false,
+    "typescript-lsp@claude-plugins-official": false
   }
 }
