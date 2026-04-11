@@ -26,11 +26,12 @@
       "cliPath": "",
       "cliPathsByHost": {
         "chensibeideMacBook-Pro-M1-6.local": "/Users/summer/.local/bin/claude",
-        "chensibeideMac-mini.local": "/Users/summer/.nvm/versions/node/v23.8.0/bin/claude"
+        "chensibeideMac-mini.local": "/Users/summer/.nvm/versions/node/v23.8.0/bin/claude",
+        "Mac.lan": "/Users/summer/.local/bin/claude"
       },
       "loadUserSettings": true,
       "enableChrome": false,
-      "enableBangBash": false,
+      "enableBangBash": true,
       "enableOpus1M": false,
       "enableSonnet1M": false,
       "lastModel": "sonnet",
