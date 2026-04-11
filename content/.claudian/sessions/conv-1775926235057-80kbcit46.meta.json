@@ -1,0 +1,23 @@
+{
+  "id": "conv-1775926235057-80kbcit46",
+  "providerId": "claude",
+  "title": "Analyze article content",
+  "titleGenerationStatus": "success",
+  "createdAt": 1775926235058,
+  "updatedAt": 1775927277119,
+  "lastResponseAt": 1775927277119,
+  "sessionId": "bd852677-12ae-480a-b77e-2f249425b0e3",
+  "providerState": {
+    "providerSessionId": "bd852677-12ae-480a-b77e-2f249425b0e3"
+  },
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 71493,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 71493,
+    "percentage": 36,
+    "contextWindowIsAuthoritative": true
+  }
+}
