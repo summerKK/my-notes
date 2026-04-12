@@ -6,7 +6,6 @@
 		{"id":"core_idea_center","type":"text","text":"# LLM Wiki 核心思想\n\n> **Wiki 是持久的、复利式的产物**\n\n区别于 RAG（每次查询重新检索），LLM 增量式构建和维护结构化知识库。\n\n**知识被编译一次，然后保持更新**","x":400,"y":200,"width":350,"height":180,"color":"1"},
 		{"id":"rag_comparison","type":"text","text":"## 传统 RAG\n\n- 上传文件 → 分块索引\n- 查询时检索片段\n- **每次重新发现知识**\n- 无积累、无持久化\n\n❌ NotebookLM、ChatGPT 文件上传","x":-50,"y":200,"width":300,"height":150,"color":"2"},
 		{"id":"layer_sources","type":"text","text":"### 📄 原始资料\n\n- 文章、论文\n- 图片、数据文件\n- **LLM 只读不改**\n- 真理之源","x":880,"y":90,"width":220,"height":120,"color":"5"},
-		{"id":"layer_wiki","type":"text","text":"### 📚 Wiki 层\n\n- LLM 生成的 Markdown\n- 摘要、实体页、概念页\n- **LLM 全权维护**\n- 你读它，LLM 写它","x":1020,"y":240,"width":220,"height":130,"color":"6"},
 		{"id":"layer_schema","type":"text","text":"### ⚙️ Schema 层\n\n- CLAUDE.md / AGENTS.md\n- 定义结构和约定\n- 工作流程规范\n- 共同演化","x":1160,"y":90,"width":210,"height":120,"color":"3"},
 		{"id":"file_index","type":"text","text":"**index.md**\n\n内容目录\n- 页面列表\n- 单行摘要\n- 按类别组织","x":-80,"y":540,"width":160,"height":100,"color":"5"},
 		{"id":"file_log","type":"text","text":"**log.md**\n\n时间日志\n- 摄取记录\n- 查询历史\n- 清理记录","x":-80,"y":660,"width":160,"height":100,"color":"2"},
@@ -17,7 +16,8 @@
 		{"id":"op_lint","type":"text","text":"## 3️⃣ 清理 Lint\n\n定期检查：\n- ⚠️ 页面间矛盾\n- 🕐 陈旧声明\n- 🔗 孤立页面\n- ❓ 缺失概念页\n- 🔍 数据空白\n\n建议用网络搜索填补","x":760,"y":550,"width":260,"height":200,"color":"2"},
 		{"id":"why_works","type":"text","text":"## 为什么有效？\n\n> 维护知识库最枯燥的是 bookkeeping —— 更新交叉引用、保持摘要最新、标记矛盾。\n\n**人类会放弃，LLM 不会厌倦。**\n\n这实现了 Vannevar Bush 1945 年的 **Memex 愿景**","x":400,"y":850,"width":400,"height":150,"color":"6"},
 		{"id":"tools","type":"text","text":"## 推荐工具\n\n- **Obsidian Web Clipper** - 网页转 Markdown\n- **qmd** - 本地搜索引擎\n- **Marp** - Markdown 幻灯片\n- **Dataview** - 动态查询","x":850,"y":850,"width":280,"height":120,"color":"3"},
-		{"id":"use_cases","type":"text","text":"## 应用场景\n\n📔 **个人成长**\n目标、健康、日记追踪\n\n🔬 **深度研究**\n论文阅读、综合 wiki\n\n📚 **读书笔记**\n章节档案、伴侣 wiki\n\n🏢 **团队知识库**\nSlack、会议自动维护\n\n✈️ **其他**\n竞争分析、尽职调查、旅行规划","x":1320,"y":500,"width":300,"height":280,"color":"1"}
+		{"id":"use_cases","type":"text","text":"## 应用场景\n\n📔 **个人成长**\n目标、健康、日记追踪\n\n🔬 **深度研究**\n论文阅读、综合 wiki\n\n📚 **读书笔记**\n章节档案、伴侣 wiki\n\n🏢 **团队知识库**\nSlack、会议自动维护\n\n✈️ **其他**\n竞争分析、尽职调查、旅行规划","x":1320,"y":500,"width":300,"height":280,"color":"1"},
+		{"id":"layer_wiki","type":"text","text":"### 📚 Wiki 层\n\n- LLM 生成的 Markdown\n- 摘要、实体页、概念页\n- **LLM 全权维护**\n- 你读它，LLM 写它","x":1045,"y":250,"width":220,"height":130,"color":"6"}
 	],
 	"edges":[
 		{"id":"edge_rag_to_core","fromNode":"rag_comparison","fromSide":"right","toNode":"core_idea_center","toSide":"left","label":"对比"},
