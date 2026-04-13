@@ -4,7 +4,11 @@
   "title": "hello",
   "titleGenerationStatus": "failed",
   "createdAt": 1775659835701,
+<<<<<<< HEAD
+  "updatedAt": 1775818936680,
+=======
   "updatedAt": 1775926216676,
+>>>>>>> origin/main
   "lastResponseAt": 1775659897518,
   "sessionId": "019d6d92-e23c-7851-a56e-b411a76aa618",
   "providerState": {
@@ -12,6 +16,10 @@
     "sessionFilePath": "/Users/summer/.codex/sessions/2026/04/08/rollout-2026-04-08T22-50-35-019d6d92-e23c-7851-a56e-b411a76aa618.jsonl",
     "transcriptRootPath": "/Users/summer/.codex/sessions"
   },
+<<<<<<< HEAD
+  "currentNote": "电影/彗星来的那一夜-时间线.canvas",
+=======
+>>>>>>> origin/main
   "usage": {
     "inputTokens": 23476,
     "cacheCreationInputTokens": 0,
