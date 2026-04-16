@@ -94,7 +94,7 @@ jobs:
 
       - name: Upload artifact
         if: steps.should_build.outputs.should_build == 'true'
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: public
 
@@ -111,4 +111,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
